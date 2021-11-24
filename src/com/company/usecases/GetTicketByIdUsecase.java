@@ -4,17 +4,17 @@ import com.company.repository.TicketsRepository;
 import com.google.inject.Inject;
 import org.json.JSONObject;
 
-public class GetTicketsUsecase {
+public class GetTicketByIdUsecase {
 
     private TicketsRepository repository;
 
     @Inject
-    public GetTicketsUsecase(TicketsRepository repository){
+    public GetTicketByIdUsecase(TicketsRepository repository){
         this.repository = repository;
     }
 
-    public JSONObject getAllTickets() {
-        return repository.getAllTickets();
+    public JSONObject getTicketByID(String id) {
+        return repository.getTicketByID(id);
     }
 
 }

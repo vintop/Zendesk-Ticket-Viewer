@@ -1,4 +1,9 @@
 package com.company.datasources;
 
-public class ITicketsDatasource {
+import org.json.JSONObject;
+
+public interface ITicketsDatasource {
+    public JSONObject getAllTickets();
+
+    public JSONObject getTicketByID(String ticketID);
 }
