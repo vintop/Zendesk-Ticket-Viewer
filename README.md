@@ -8,7 +8,9 @@ written by Vinay Kumar
 Ensure that Java and Java C are installed on the machine
 (You will require jre1.8.0_65 or greater)
 You can check the current version of Java installed by typing:
+```
 java -version
+```
 And you can check the current Java C version installed by typing:
 which javac
 
@@ -21,10 +23,14 @@ which javac
 
 ### COMPILING THE PROGRAM
 1. Navigate to the extracted project directory, where you should see folders like src, libs, ect
-2. compile the jars and java file :-    
+2. compile the jars and java file :- 
+```   
    javac -d bin -sourcepath src -cp "libs/*"  src/com/company/Main.java
-3. Run the main class :-        
+```
+3. Run the main class :-  
+```   
    java -cp bin:"libs/*" com.company.Main
+```   
 
 ## Requirements
 
@@ -59,3 +65,5 @@ TicketViewer application.
 <img src="./img/cln_android.png">
 
 ## Future Scope
+- Run tickets fetching task(through api's) in background IO thread.
+- Better testing, simulating user input and mocks.
