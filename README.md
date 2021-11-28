@@ -45,7 +45,17 @@ framework for your language of choice.
 
 
 ## Architecture
+<img src="./img/clean_arch.png">
 
+### Clean Architecture
+Clean architecture provides guidelines for organising the different units of code with its dependency rule. Other architectures (MVC/MVP/MVVM) focus on
+separating the Android View dependencies but in reality we do consume other elements provided by Android framework such as SQLite Database,
+Content Providers, Content observers, Shared Preferences. Introducing these elements into our domain rules would make it tightly coupled to the
+framework and not portable to other platforms. We end up reinventing the wheel again for other platforms. Clean architecture solves this problem by
+arranging the dependencies into concentric circles(as shown above). It also helps to develop business rules independent of framework, more testable
+codebase, adaptive to data storage decisions(changing db) and robust to UX changes. These guidelines provides a path for achieving the design goals of
+TicketViewer application.
 
+<img src="./img/cln_android.png">
 
 ## Future Scope
