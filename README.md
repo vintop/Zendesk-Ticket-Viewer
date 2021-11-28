@@ -59,3 +59,5 @@ TicketViewer application.
 <img src="./img/cln_android.png">
 
 ## Future Scope
+- Run tickets fetching task(through api's) in background IO thread.
+- Better testing, simulating user input and mocks.
