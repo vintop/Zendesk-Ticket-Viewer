@@ -63,7 +63,7 @@ public class ZendeskTicketsDatasource implements ITicketsDatasource{
     private JSONObject connectToAPI(boolean multi, String id) {
 
         //connection information
-        String subdomain = "zendeskcodingchallenge103";
+        String subdomain = "zendeskcodingchallenge6582";
         String email_address = "vinaysamudrala3334@gmail.com";
         String password = "Vinayakii3@";
         String stringURL = "";
@@ -110,8 +110,6 @@ public class ZendeskTicketsDatasource implements ITicketsDatasource{
         } catch (Exception e) {
             System.out.println("ERROR: Ooops! Something went wrong fetching your ticket(s).");
             return null;
-        } finally {
-            sc.close();
         }
 
         //return JSON
